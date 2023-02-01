@@ -1,6 +1,6 @@
 /*UNIVERSO DEL DISCURSO
 
-ZyzzApp es una aplicación de gestión de rutinas personalizadas de gym. 
+RAW es una aplicación de gestión de rutinas personalizadas de gym. 
 Los usuarios pueden crear su propio plan de entrenamiento personalizado
 basado en su nivel de condición física, objetivos y disponibilidad de tiempo.
 La aplicación también ofrece acceso a una variedad de ejercicios con demos y
@@ -8,7 +8,7 @@ tutoriales en video para ayudar a los usuarios a realizar los ejercicios correct
 
 La aplicación también permite a los usuarios registrar su progreso y ver su evolución
 a través de gráficos y estadísticas. Los usuarios también pueden compartir sus logros 
-y metas con amigos y seguidores en la aplicación. Además, ZyzzApp tiene una función de 
+y metas con amigos y seguidores en la aplicación. Además, RAW tiene una función de 
 seguimiento de nutrición, donde los usuarios pueden registrar lo que comen y obtener
 recomendaciones de alimentación personalizadas para alcanzar sus objetivos de
 acondicionamiento físico.
@@ -17,7 +17,7 @@ La aplicación también ofrece una variedad de contenido exclusivo, como entrevi
 con entrenadores profesionales y atletas, así como artículos sobre nutrición 
 y acondicionamiento físico.
 
-ZyzzApp también ofrece una opción de suscripción premium que permite a los usuarios
+RAW también ofrece una opción de suscripción premium que permite a los usuarios
 acceder a contenido adicional y funciones avanzadas, como la posibilidad de crear planes
 de entrenamiento personalizados con un entrenador personal.
 
