@@ -1,6 +1,6 @@
 /*UNIVERSO DEL DISCURSO
 
-RAW es una aplicación de gestión de rutinas personalizadas de gym. 
+ZyzzApp es una aplicación de gestión de rutinas personalizadas de gym. 
 Los usuarios pueden crear su propio plan de entrenamiento personalizado
 basado en su nivel de condición física, objetivos y disponibilidad de tiempo.
 La aplicación también ofrece acceso a una variedad de ejercicios con demos y
@@ -8,7 +8,7 @@ tutoriales en video para ayudar a los usuarios a realizar los ejercicios correct
 
 La aplicación también permite a los usuarios registrar su progreso y ver su evolución
 a través de gráficos y estadísticas. Los usuarios también pueden compartir sus logros 
-y metas con amigos y seguidores en la aplicación. Además, RAW tiene una función de 
+y metas con amigos y seguidores en la aplicación. Además, ZyzzApp tiene una función de 
 seguimiento de nutrición, donde los usuarios pueden registrar lo que comen y obtener
 recomendaciones de alimentación personalizadas para alcanzar sus objetivos de
 acondicionamiento físico.
@@ -17,7 +17,7 @@ La aplicación también ofrece una variedad de contenido exclusivo, como entrevi
 con entrenadores profesionales y atletas, así como artículos sobre nutrición 
 y acondicionamiento físico.
 
-RAW también ofrece una opción de suscripción premium que permite a los usuarios
+ZyzzApp también ofrece una opción de suscripción premium que permite a los usuarios
 acceder a contenido adicional y funciones avanzadas, como la posibilidad de crear planes
 de entrenamiento personalizados con un entrenador personal.
 
@@ -180,15 +180,26 @@ BEGIN
   WHERE ID_USUARIO = :NEW.ID_USUARIO;
 END;
 
+
 --PAQUETE ESQUELETO
 
 CREATE OR REPLACE PACKAGE gym_package AS
   FUNCTION obtener_usuario (p_id_usuario USUARIO.ID_USUARIO%TYPE)
     RETURN USUARIO%ROWTYPE;
 
+  PROCEDURE insert_usuario (
+  p_nombre USUARIO.NOMBRE%TYPE,
+  p_apellido USUARIO.APELLIDO%TYPE,
+  p_edad USUARIO.EDAD%TYPE,
+  p_peso USUARIO.PESO%TYPE,
+  p_altura USUARIO.ALTURA%TYPE,
+  p_objetivo USUARIO.OBJETIVO%TYPE
+  );
+
   PROCEDURE agregar_seguidor (p_id_usuario USUARIO.ID_USUARIO%TYPE, p_num_seguidores USUARIO.NUM_SEGUIDORES%TYPE);
 
   PROCEDURE agregar_siguiendo (p_id_usuario USUARIO.ID_USUARIO%TYPE, p_num_siguiendo USUARIO.NUM_SIGUIENDO%TYPE);
+
 END gym_package;
 
 --PAQUETE CUERPO
@@ -205,6 +216,19 @@ CREATE OR REPLACE PACKAGE BODY gym_package AS
     RETURN usuario_result;
   END obtener_usuario;
 
+  PROCEDURE insert_usuario (
+  p_nombre USUARIO.NOMBRE%TYPE,
+  p_apellido USUARIO.APELLIDO%TYPE,
+  p_edad USUARIO.EDAD%TYPE,
+  p_peso USUARIO.PESO%TYPE,
+  p_altura USUARIO.ALTURA%TYPE,
+  p_objetivo USUARIO.OBJETIVO%TYPE
+  ) AS
+  BEGIN
+    INSERT INTO USUARIO (NOMBRE, APELLIDO, EDAD, PESO, ALTURA, OBJETIVO)
+    VALUES (p_nombre, p_apellido, p_edad, p_peso, p_altura, p_objetivo);
+  END;
+
   PROCEDURE agregar_seguidor (p_id_usuario USUARIO.ID_USUARIO%TYPE, p_num_seguidores USUARIO.NUM_SEGUIDORES%TYPE)
   AS
   BEGIN
@@ -220,15 +244,17 @@ CREATE OR REPLACE PACKAGE BODY gym_package AS
     SET NUM_SIGUIENDO = NUM_SIGUIENDO + p_num_siguiendo
     WHERE ID_USUARIO = p_id_usuario;
   END agregar_siguiendo;
+
 END gym_package;
 
 
-
-
-
-   
-
-
+--EJECUCION OBTENER_USUARIO (en este caso solo el nombre y el apellido)
+DECLARE
+usuario_result USUARIO%ROWTYPE;
+BEGIN
+usuario_result := gym_package.obtener_usuario(2);
+dbms_output.put_line(usuario_result.NOMBRE || ' ' || usuario_result.APELLIDO);
+END;
 
 
 
