@@ -139,21 +139,6 @@ inner join EJERCICIO on RUTINA_EJERCICIO.ID_EJERCICIO = EJERCICIO.ID_EJERCICIO
 inner join rutina on RUTINA_EJERCICIO.ID_RUTINA = RUTINA.ID_RUTINA
 order by nombreUsuario;
 
---CURSOR
-DECLARE
-  CURSOR usuarios_cursor IS
-    SELECT * FROM USUARIO;
-  usuario_record USUARIO%ROWTYPE;
-BEGIN
-  OPEN usuarios_cursor;
-  LOOP
-    FETCH usuarios_cursor INTO usuario_record;
-    EXIT WHEN usuarios_cursor%NOTFOUND;
-    -- Do something with the usuario_record.
-  END LOOP;
-  CLOSE usuarios_cursor;
-END;
-
 --PROCEDIMIENTO ALMACENADO 
 
 CREATE OR REPLACE PROCEDURE insert_usuario (
@@ -256,5 +241,27 @@ usuario_result := gym_package.obtener_usuario(2);
 dbms_output.put_line(usuario_result.NOMBRE || ' ' || usuario_result.APELLIDO);
 END;
 
-
-
+--CURSOR
+DECLARE
+  CURSOR usuarios_cursor IS
+  SELECT * FROM USUARIO;
+  usuario_record USUARIO%ROWTYPE;
+BEGIN
+  OPEN usuarios_cursor;
+  LOOP
+    FETCH usuarios_cursor INTO usuario_record;
+  EXIT WHEN usuarios_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(
+      'ID_USUARIO: ' || usuario_record.ID_USUARIO || ', ' ||
+      'NOMBRE: ' || usuario_record.NOMBRE || ', ' ||
+      'APELLIDO: ' || usuario_record.APELLIDO || ', ' ||
+      'EDAD: ' || usuario_record.EDAD || ', ' ||
+      'PESO: ' || usuario_record.PESO || ', ' ||
+      'ALTURA: ' || usuario_record.ALTURA || ', ' ||
+      'OBJETIVO: ' || usuario_record.OBJETIVO || ', ' ||
+      'NUM_SEGUIDORES: ' || usuario_record.NUM_SEGUIDORES || ', ' ||
+      'NUM_SIGUIENDO: ' || usuario_record.NUM_SIGUIENDO
+    );
+  END LOOP;
+  CLOSE usuarios_cursor;
+END;
