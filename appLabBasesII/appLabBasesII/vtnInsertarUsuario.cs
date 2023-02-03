@@ -39,5 +39,12 @@ namespace appLabBasesII
             String Resultado = nuevaConsulta.insertarUsuario(txtNombre.Text, txtApellido.Text, int.Parse(txtEdad.Text), double.Parse(txtPeso.Text), double.Parse(txtAltura.Text), txtObjetivo.Text, txtEstado.Text);
             MessageBox.Show(Resultado);
         }
+
+        private void btnVolver1_Click(object sender, EventArgs e)
+        {
+            Form menu = new VentanaMenu(conexion, user);
+            this.Hide();
+            menu.Show();    
+        }
     }
 }

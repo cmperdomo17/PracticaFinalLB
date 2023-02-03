@@ -38,5 +38,12 @@ namespace appLabBasesII
             dataGridView2.DataSource = nuevaConsulta.ConsultarNombresEjercicio();
             dataGridView1.DataSource = nuevaConsulta.ConsultarNombreRutina();
         }
+
+        private void btnVolver2_Click(object sender, EventArgs e)
+        {
+            Form menu = new VentanaMenu(conexion, user);
+            this.Hide();
+            menu.Show();
+        }
     }
 }

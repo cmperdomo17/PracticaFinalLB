@@ -102,3 +102,40 @@ C:\Users\agred\OneDrive\Escritorio\Proyecto Final De Bases 2\PracticaFinalLB\app
 C:\Users\agred\OneDrive\Escritorio\Proyecto Final De Bases 2\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.vtnInsertarEjercicio.resources
 C:\Users\agred\OneDrive\Escritorio\Proyecto Final De Bases 2\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.vtnEjercicioRutina.resources
 C:\Users\agred\OneDrive\Escritorio\Proyecto Final De Bases 2\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.vtnInsertarClienteRutina.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\appLabBasesII.exe.config
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\appLabBasesII.exe
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\appLabBasesII.pdb
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Buffers.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Memory.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Text.Json.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.ValueTuple.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Buffers.xml
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Memory.xml
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Text.Json.xml
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\bin\Debug\System.ValueTuple.xml
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.csproj.SuggestedBindingRedirects.cache
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.vtnEjercicioRutina.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.VentanaInicio.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.Properties.Resources.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.VentanaMenu.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.vtnInsertarClienteRutina.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.vtnInsertarEjercicio.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.vtnInsertarRutina.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.vtnInsertarUsuario.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.csproj.GenerateResource.cache
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.csproj.CopyComplete
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.exe
+C:\Users\carlo\OneDrive\Documentos\GitHub\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.pdb

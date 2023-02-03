@@ -31,5 +31,12 @@ namespace appLabBasesII
             String Resutlado = nuevaConsulta.InsertarRutina(txtNombreRutina.Text, txtDescripcion.Text, int.Parse(txtNivel.Text));
             MessageBox.Show(Resutlado);
         }
+
+        private void btnVolver5_Click(object sender, EventArgs e)
+        {
+            Form menu = new VentanaMenu(conexion, user);
+            this.Hide();
+            menu.Show();
+        }
     }
 }

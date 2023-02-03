@@ -29,5 +29,12 @@ namespace appLabBasesII
             String resultado = nuevaConsulta.InsertarEjercicio(txtNombreEjercicio.Text, txtEjercicio.Text, txtDescripcion.Text);
             MessageBox.Show(resultado);
         }
+
+        private void btnVolver4_Click(object sender, EventArgs e)
+        {
+            Form menu = new VentanaMenu(conexion, user);
+            this.Hide();
+            menu.Show();
+        }
     }
 }
