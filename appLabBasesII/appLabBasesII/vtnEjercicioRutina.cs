@@ -23,6 +23,7 @@ namespace appLabBasesII
             this.conexion = conexion;
             this.user = user;
             InitializeComponent();
+            Inicializar();
         }
 
         private void btnAgregarRutinaEjercicio_Click(object sender, EventArgs e)
@@ -30,6 +31,12 @@ namespace appLabBasesII
             Consultas nuevaConsulta = new Consultas(conexion, user);
             String resultado = nuevaConsulta.InsertarRutinaEjercicio(txtNombreRutina.Text, txtNombreEjercicio.Text, double.Parse(txtSeries.Text),double.Parse(txtRepeticiones.Text));
             MessageBox.Show(resultado);
+        }
+
+        private void Inicializar() {
+            Consultas nuevaConsulta = new Consultas(conexion, user);
+            dataGridView2.DataSource = nuevaConsulta.ConsultarNombresEjercicio();
+            dataGridView1.DataSource = nuevaConsulta.ConsultarNombreRutina();
         }
     }
 }

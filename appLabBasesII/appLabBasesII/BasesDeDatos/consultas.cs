@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -159,6 +160,62 @@ namespace baseDeDatos.conection
             }
 
         }
+
+        public DataTable ConsultarNombresEjercicio() {
+
+            DataTable datos = new DataTable();
+            OracleCommand ora_cmd = new OracleCommand(user + ".gym_package_Consultas.consultar_Ejercicio", conexion);
+            ora_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            ora_cmd.Parameters.Add("p_cursor", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+
+            try
+            {
+                conexion.Open();
+                ora_cmd.ExecuteNonQuery();
+                OracleDataAdapter da = new OracleDataAdapter(ora_cmd);
+                da.Fill(datos);
+                return datos;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+            finally {
+                conexion.Close();
+            }
+
+
+        }
+
+        public DataTable ConsultarNombreRutina()
+        {
+
+            DataTable datos = new DataTable();
+            OracleCommand ora_cmd = new OracleCommand(user + ".gym_package_Consultas.consultar_Rutina", conexion);
+            ora_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            ora_cmd.Parameters.Add("p_cursor", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+
+            try
+            {
+                conexion.Open();
+                ora_cmd.ExecuteNonQuery();
+                OracleDataAdapter da = new OracleDataAdapter(ora_cmd);
+                da.Fill(datos);
+                return datos;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+
+
+        }
+
+
         #endregion;
 
 
