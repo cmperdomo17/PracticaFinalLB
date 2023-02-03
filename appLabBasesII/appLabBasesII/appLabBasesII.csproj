@@ -81,6 +81,12 @@
   <ItemGroup>
     <Compile Include="BasesDeDatos\consultas.cs" />
     <Compile Include="BasesDeDatos\conection.cs" />
+    <Compile Include="vtnInsertarEjercicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vtnInsertarEjercicio.Designer.cs">
+      <DependentUpon>vtnInsertarEjercicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="vtnInsertarRutina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     </Compile>
     <EmbeddedResource Include="VentanaMenu.resx">
       <DependentUpon>VentanaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vtnInsertarEjercicio.resx">
+      <DependentUpon>vtnInsertarEjercicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vtnInsertarRutina.resx">
       <DependentUpon>vtnInsertarRutina.cs</DependentUpon>

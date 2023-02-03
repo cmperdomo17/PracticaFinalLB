@@ -35,5 +35,12 @@ namespace appLabBasesII
             InsertarRutina.Show();
             this.Close();
         }
+
+        private void btnInsertarEjercicio_Click(object sender, EventArgs e)
+        {
+            Form InsertarEjercicio = new vtnInsertarEjercicio(conexion, user);
+            InsertarEjercicio.Show();
+            this.Close();
+        }
     }
 }

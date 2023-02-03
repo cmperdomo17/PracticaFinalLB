@@ -99,3 +99,4 @@ C:\Users\agred\OneDrive\Escritorio\Proyecto Final De Bases 2\PracticaFinalLB\app
 C:\Users\agred\OneDrive\Escritorio\Proyecto Final De Bases 2\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.exe
 C:\Users\agred\OneDrive\Escritorio\Proyecto Final De Bases 2\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.pdb
 C:\Users\agred\OneDrive\Escritorio\Proyecto Final De Bases 2\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.vtnInsertarRutina.resources
+C:\Users\agred\OneDrive\Escritorio\Proyecto Final De Bases 2\PracticaFinalLB\appLabBasesII\appLabBasesII\obj\Debug\appLabBasesII.vtnInsertarEjercicio.resources
