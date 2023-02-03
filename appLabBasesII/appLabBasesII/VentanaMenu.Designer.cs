@@ -34,11 +34,13 @@ namespace appLabBasesII
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnInsertarRutina = new System.Windows.Forms.Button();
             this.btnInsertarEjercicio = new System.Windows.Forms.Button();
+            this.btnEjercicioEnRutina = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnEjercicioEnRutina);
             this.panel1.Controls.Add(this.btnInsertarEjercicio);
             this.panel1.Controls.Add(this.btnInsertarRutina);
             this.panel1.Controls.Add(this.btnInsertarUsuario);
@@ -87,6 +89,16 @@ namespace appLabBasesII
             this.btnInsertarEjercicio.UseVisualStyleBackColor = true;
             this.btnInsertarEjercicio.Click += new System.EventHandler(this.btnInsertarEjercicio_Click);
             // 
+            // btnEjercicioEnRutina
+            // 
+            this.btnEjercicioEnRutina.Location = new System.Drawing.Point(275, 222);
+            this.btnEjercicioEnRutina.Name = "btnEjercicioEnRutina";
+            this.btnEjercicioEnRutina.Size = new System.Drawing.Size(233, 23);
+            this.btnEjercicioEnRutina.TabIndex = 3;
+            this.btnEjercicioEnRutina.Text = "Insertar Ejercicio en Rutina";
+            this.btnEjercicioEnRutina.UseVisualStyleBackColor = true;
+            this.btnEjercicioEnRutina.Click += new System.EventHandler(this.btnEjercicioEnRutina_Click);
+            // 
             // VentanaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -108,5 +120,6 @@ namespace appLabBasesII
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnInsertarRutina;
         private System.Windows.Forms.Button btnInsertarEjercicio;
+        private System.Windows.Forms.Button btnEjercicioEnRutina;
     }
 }

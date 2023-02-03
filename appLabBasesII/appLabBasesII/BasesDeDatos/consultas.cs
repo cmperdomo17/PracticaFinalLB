@@ -104,6 +104,34 @@ namespace baseDeDatos.conection
             }
 
         }
+
+        public String InsertarRutinaEjercicio(String nombreRutina, String nombreEjercicio, double series, double repeticiones)
+        {
+            OracleCommand ora_cmd = new OracleCommand(user + ".gym_package.insertar_rutina_ejercicio", conexion);
+            ora_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            ora_cmd.Parameters.Add("p_nombre_rutina", OracleDbType.Varchar2, nombreRutina, System.Data.ParameterDirection.Input);
+            ora_cmd.Parameters.Add("p_nombre_ejercicio", OracleDbType.Varchar2, nombreEjercicio, System.Data.ParameterDirection.Input);
+            ora_cmd.Parameters.Add("p_series", OracleDbType.Double, series, System.Data.ParameterDirection.Input);
+            ora_cmd.Parameters.Add("p_repeticiones", OracleDbType.Double, repeticiones, System.Data.ParameterDirection.Input);
+
+            try
+            {
+                conexion.Open();
+                ora_cmd.ExecuteNonQuery();
+                return "Insercción exitosa";
+
+            }
+            catch (Exception e)
+            {
+                return e.ToString();
+            }
+            finally
+            {
+
+                conexion.Close();
+            }
+
+        }
         #endregion;
 
 
