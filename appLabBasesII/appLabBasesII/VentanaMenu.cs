@@ -49,5 +49,12 @@ namespace appLabBasesII
             InsertarEjercicioRutina.Show();
             this.Close();
         }
+
+        private void btnRutinaCliente_Click(object sender, EventArgs e)
+        {
+            Form InsertarRutinaCliente = new vtnInsertarClienteRutina(conexion, user);
+            InsertarRutinaCliente.Show();
+            this.Close();
+        }
     }
 }

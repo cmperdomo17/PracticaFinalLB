@@ -132,6 +132,33 @@ namespace baseDeDatos.conection
             }
 
         }
+
+        public String InsertarClienteRutina(String nombreUsuario, String nombreApellido, String nombreRutina)
+        {
+            OracleCommand ora_cmd = new OracleCommand(user + ".gym_package.insertar_cliente_rutina", conexion);
+            ora_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            ora_cmd.Parameters.Add("p_nombre_usuario", OracleDbType.Varchar2, nombreUsuario, System.Data.ParameterDirection.Input);
+            ora_cmd.Parameters.Add("p_apellido_usuario", OracleDbType.Varchar2, nombreApellido, System.Data.ParameterDirection.Input);
+            ora_cmd.Parameters.Add("p_nombre_rutina", OracleDbType.Varchar2, nombreRutina, System.Data.ParameterDirection.Input);
+
+            try
+            {
+                conexion.Open();
+                ora_cmd.ExecuteNonQuery();
+                return "Insercción exitosa";
+
+            }
+            catch (Exception e)
+            {
+                return e.ToString();
+            }
+            finally
+            {
+
+                conexion.Close();
+            }
+
+        }
         #endregion;
 
 
