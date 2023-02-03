@@ -52,6 +52,31 @@ namespace baseDeDatos.conection
 
 
         }
+
+        public String InsertarRutina(String nombre, String descripcion, int nivel) {
+            OracleCommand ora_cmd = new OracleCommand(user + ".gym_package.insert_rutina", conexion);
+            ora_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            ora_cmd.Parameters.Add("p_nombre", OracleDbType.Varchar2, nombre, System.Data.ParameterDirection.Input);
+            ora_cmd.Parameters.Add("p_descripcion", OracleDbType.Varchar2, descripcion, System.Data.ParameterDirection.Input);
+            ora_cmd.Parameters.Add("p_nivel", OracleDbType.Int64, nivel, System.Data.ParameterDirection.Input);
+
+            try
+            {
+                conexion.Open();
+                ora_cmd.ExecuteNonQuery();
+                return "Insercción exitosa";
+
+            }
+            catch (Exception e)
+            {
+                return e.ToString();
+            }
+            finally {
+
+                conexion.Close();
+            }
+
+        }
         #endregion;
 
 

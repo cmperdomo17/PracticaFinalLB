@@ -6,34 +6,30 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using baseDeDatos.conection;
 using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
 
 namespace appLabBasesII
 {
-    public partial class VentanaMenu : Form
+    public partial class vtnInsertarRutina : Form
     {
+        #region Atributos
         private OracleConnection conexion;
         private string user;
-        public VentanaMenu(OracleConnection conexion, string user)
+        #endregion
+        public vtnInsertarRutina(OracleConnection conexion, string user)
         {
             this.conexion = conexion;
             this.user = user;
             InitializeComponent();
         }
 
-        private void btnInsertarUsuario_Click(object sender, EventArgs e)
-        {
-            Form InsertarUsuario = new vtnInsertarUsuario(conexion, user);
-            InsertarUsuario.Show();
-            this.Close();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Form InsertarRutina = new vtnInsertarRutina(conexion, user);
-            InsertarRutina.Show();
-            this.Close();
+            Consultas nuevaConsulta = new Consultas(conexion, user);
+            String Resutlado = nuevaConsulta.InsertarRutina(txtNombreRutina.Text, txtDescripcion.Text, int.Parse(txtNivel.Text));
+            MessageBox.Show(Resutlado);
         }
     }
 }
